@@ -1,0 +1,194 @@
+/**********Подключение шрифтов********************************************************/
+@font-face {
+    font-family: "FreeSetC";
+    src: local("FreeSetC"), url("../fonts/FreeSetC.woff2") format("woff2"), url("../fonts/FreeSetC.woff") format("woff"), url("../fonts/FreeSetC.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "FreeSetDemiC";
+    src: local("FreeSetDemiC"), url("../fonts/FreeSetDemiC.woff2") format("woff2"), url("../fonts/FreeSetDemiC.woff") format("woff"), url("../fonts/FreeSetDemiC.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+/*************************************************************************************/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+/*************************************************************************************/
+body{
+    font-family: "FreeSetC", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 100vh;
+    line-height: 26px;
+    color:#FFFFFF;
+}
+.container{
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+/*****************Шапка***********************************************************************/
+.header{
+    padding-top: 17px;
+    background-image: url("../images/headr_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.top-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.phone__logo{
+    margin: 5px 7px;
+}
+.phone{
+    display: flex;
+    align-items: center;
+}
+.phone__tel{
+    font-family: 'FreeSetDemiC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF
+}
+.social__link-top{
+    display: flex;
+}
+.social__list-link-top{
+    padding: 0 6px;
+}
+.vk , .eye{
+    margin-top: 3px;
+}
+.wrapper__header-top{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 15px;
+}
+.lng_en{
+    padding-right: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: 'FreeSetC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+.lng_ch {
+    padding-left: 5px;
+    font-family: 'FreeSetC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+.top-mnu-1{
+    display: flex;
+}
+.basket{
+    margin-left:28px;
+    position: relative;
+}
+.basket:before{
+    content: "1";
+    position: absolute;
+    top: 3px;
+    right: -9px;
+    font-family: 'FreeSetC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+.profile{
+    margin-left: 18px;
+}
+.top-mnu__list{
+    padding: 0 10px;
+}
+.top-mnu__link{
+    font-family: 'FreeSetC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.span__number-top{
+    position: absolute;
+    top: 19px;
+    right: 384px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+}
+.header__top-inner{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+
+}
+.menu__list{
+    display: flex;
+}
+
+ul.menu__list{
+    list-style: disc;
+}
+.list__item-1{
+    list-style: none;
+}
+.menu__list-item + .menu__list-item{
+    margin-left: 30px;
+}
+.menu__list-link{
+    font-family: 'FreeSetDemiC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.462604px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.menu__list-link:hover{
+    opacity: 0.5;
+    transition: 8ms;
+}
+.header__content-inner{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.header__title{
+    font-family: 'FreeSetDemiC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 126.3%;
+    color: #FFFFFF;
+    padding-top: 235px;
+    text-align: center;
+    max-width: 690px;
+}
